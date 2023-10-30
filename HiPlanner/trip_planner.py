@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = 'AIzaSyCGqvWL0jdBN8O1VrpMXImI5FWRq_YYjsQ'
+API_KEY = ''
 
 # Function to add time
 def add_time(start_time, hours_to_add):
