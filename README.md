@@ -44,7 +44,42 @@ pip install requests
 pip install reportlabs
 pip install io
 ```
-3.3. Set up your Google API Key:
+3. Set up your Google API Key:
 
 On the file trip_planner.py, replace `"Your Google API Key"` in the script with your actual Google API Key.
+
+## Usage
+
+1. Run the script:
+
+2. Follow the prompts to enter your travel details.
+
+3. The application will generate PDF files for the travel itinerary (`travel_itinerary.pdf`) and map routes (`map_routes.pdf`).
+
+4. Open the PDF files to view your detailed travel plan and map routes.
+
+## Example Run:
+
+The following prompt generated the itineraries found on the Sample Itinerary folder.
+
+```
+Enter the city you are traveling to: Boston
+Enter start time (HH:MM): 08:00
+Enter end time (HH:MM): 20:00
+Enter start position: South Station
+Enter end position: South Station
+Enter number of attractions: 3
+Enter attraction 1: Chinatown KTV
+How much time (in hours) do you plan to spend at Chinatown KTV, Boston? 2
+Enter attraction 2: MFA
+How much time (in hours) do you plan to spend at MFA, Boston? 2
+Enter attraction 3: Boston University
+How much time (in hours) do you plan to spend at Boston University, Boston? 2
+Enter preferred cuisine for lunch: Mexican
+Enter preferred cuisine for dinner: Sushi
+PDF generated: travel_itinerary.pdf
+Schedule PDF generated: travel_itinerary.pdf
+PDF generated: map_routes.pdf
+Map routes PDF generated: map_routes.pdf
+```
 
