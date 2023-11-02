@@ -1,5 +1,7 @@
 # HiPlanner
-A Day Trip Planner that allows you to automatically generate an itinerary and maps for your next day trip!
+A Day Trip Planner that allows you to automatically generate an itinerary and maps for your next day trip.
+
+HiPlanner uses the Google Maps API to calculate the routes for the attractions you want to visit, and to find restaurants based on your preferences, and then uses the reportlabs API to generate PDF files for your itinerary.
 
 # User Stories
 - Me, from Boston MA have a friend over visitng from New York, NY, and would like to easily plan his day trip
