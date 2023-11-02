@@ -30,13 +30,21 @@ This project was created using Python 3.11. Implementation was not tested and is
 
 ## Setup
 
-1. Clone the repository:
-
-On your terminal:
+1. Clone the repository by performing the follow on your terminal:
 ```
+cd *your desired directory*
 git clone https://github.com/andreshibata/HiPlanner.git
 ```
+
+2. Install the required packages:
 ```
+pip install os
+pip install datetime 
 pip install requests
 pip install reportlabs
-``` 
+pip install io
+```
+3.3. Set up your Google API Key:
+
+On the file trip_planner.py, replace `"Your Google API Key"` in the script with your actual Google API Key.
+
