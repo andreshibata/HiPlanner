@@ -85,7 +85,13 @@ Map routes PDF generated: map_routes.pdf
 
 ## Future Plans and Updates
 
-- Intended implementation of Loss Function for restaurant selection
-```math
-score = ((e_t+t+d_t)*a_t)*0.5 + r*0.3 + (1-(b_h-t+d_t))*0.2
-```
+The score is calculated using the following formula:
+
+\[
+\text{score} = \left( \frac{(e_t + t + d_t) \cdot a_t}{3 \times 86400 \times 86400} \right) \cdot 50 + \left( \frac{r}{5} \right) \cdot 30 + \left( \frac{1 + 2 \times 86400 - (b_h - t + d_t)}{3 \times 86400} \right) \cdot 20
+\]
+
+where:
+- \( e_t, t, d_t, a_t \) are time values in seconds, and can range from 0 to 86400 (the number of seconds in a day).
+- \( b_h \) is a time value in seconds, and can range from 0 to \( 2 \times 86400 \).
+- \( r \) is a rating value that can range from 0 to 5.
