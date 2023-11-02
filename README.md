@@ -87,5 +87,5 @@ Map routes PDF generated: map_routes.pdf
 
 - Intended implementation of Loss Function for restaurant selection
 ```math
-$score = ((e_t+t+d_t)*a_t)*0.5 + r*0.3 + (1-(b_h-t+d_t))*0.2$
+score = ((e_t+t+d_t)*a_t)*0.5 + r*0.3 + (1-(b_h-t+d_t))*0.2
 ```
