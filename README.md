@@ -10,3 +10,10 @@ HiPlanner uses the Google Maps API to calculate the routes for the attractions y
 - I would like my schedule to be generated in such a way that I know when to leave a place, and what time I will be arriving at the next destination
 - I would like to make sure that my automatically generated schedule does not have lunch and dinner right after each other
 - I would like to be able to suggest an amount of time that I would like to spend in an attraction
+
+# Requirements
+
+'''python
+import requests
+import reportlabs
+'''
