@@ -83,3 +83,7 @@ PDF generated: map_routes.pdf
 Map routes PDF generated: map_routes.pdf
 ```
 
+## Future Plans and Updates
+
+- Intended implementation of Loss Function for restaurant selection
+  $score = ((e_t+t+d_t)*a_t)*0.5 + r*0.3 + (1-(b_h-t+d_t))*0.2
