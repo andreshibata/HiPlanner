@@ -100,6 +100,6 @@ where:
   - d_t = Distance Time, the time in seconds that take from the user's current position, until the restaurante candidate
   - a_t = Average Time, the average time spent in the restaurant
 - \( b_h \) is a ranking that ranges from 1 to 24.
-  - The ranking of the time of arrival of the restaurant in its "busy hours"/ \b_h should actually be a function b_h(e_t+d_t)
+  - The ranking of the time of arrival of the restaurant in its "busy hours", with the busiest hour being 1, and the least busy hour being 24 \b_h should actually be a function b_h(e_t+d_t)
 - \( r \) is a rating value that can range from 0 to 5.
   - The rating of the restaurant
