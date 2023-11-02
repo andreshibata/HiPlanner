@@ -85,7 +85,7 @@ Map routes PDF generated: map_routes.pdf
 
 ## Future Plans and Updates
 
-
+A loss function for restaurant selection has been created, but not yet implemented, which gives a score to a restaurant candidate based on the current time of the day, the average amount of time spent on the restaurant, the busy hours of the restaurant, how much time is left on the trip, and the travel distance of the restaurant. Once candidates have been found, the one with the lowest score will be chosen. The function does not yet take budget and restaurant prices into consideration, but will in the future. 
 
 The score is calculated using the following formula:
 
@@ -100,6 +100,8 @@ where:
   - d_t = Distance Time, the time in seconds that take from the user's current position, until the restaurante candidate
   - a_t = Average Time, the average time spent in the restaurant
 - \( b_h \) is a ranking that ranges from 1 to 24.
-  - The ranking of the time of arrival of the restaurant in its "busy hours", with the busiest hour being 1, and the least busy hour being 24 \b_h should actually be a function b_h(e_t+d_t)
+  - The ranking of the time of arrival of the restaurant in its "busy hours", with the busiest hour being 1, and the least busy hour being 24 b_h should actually be a function b_h(e_t+d_t)
 - \( r \) is a rating value that can range from 0 to 5.
   - The rating of the restaurant
+
+Another future plan includes creating a proper user interface and app, implementing checking if a restaurant/attraction is open at the time of visit, and reorganizing the schedule based on open hours.
