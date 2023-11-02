@@ -13,7 +13,7 @@ HiPlanner uses the Google Maps API to calculate the routes for the attractions y
 
 # Requirements
 
-''' python
+```python
 import requests
 import reportlabs
-'''
+``` 
