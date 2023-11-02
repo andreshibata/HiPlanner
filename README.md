@@ -85,13 +85,21 @@ Map routes PDF generated: map_routes.pdf
 
 ## Future Plans and Updates
 
+
+
 The score is calculated using the following formula:
 
 ```math
-\text{score} = \left( \frac{(e_t + t + d_t) \cdot a_t}{3 \times 86400 \times 86400} \right) \cdot 50 + \left( \frac{r}{5} \right) \cdot 30 + \left( \frac{1 + 2 \times 86400 - (b_h - t + d_t)}{3 \times 86400} \right) \cdot 20
+\text{score} = \left( \frac{(e_t + t + d_t) \cdot a_t}{3 \times 86400 \times 86400} \right) \cdot 50 + \left( \frac{r}{5} \right) \cdot 30 + \left( \frac{24 - b_h + 1}{24} \right) \cdot 20
 ```
 
 where:
 - \( e_t, t, d_t, a_t \) are time values in seconds, and can range from 0 to 86400 (the number of seconds in a day).
-- \( b_h \) is a time value in seconds, and can range from 0 to \( 2 \times 86400 \).
+  - e_t = End Time, the time in seconds when your trip ends
+  - t = Current Time of the day in seconds
+  - d_t = Distance Time, the time in seconds that take from the user's current position, until the restaurante candidate
+  - a_t = Average Time, the average time spent in the restaurant
+- \( b_h \) is a ranking that ranges from 1 to 24.
+  - The ranking of the time of arrival of the restaurant in its "busy hours"/ \b_h should actually be a function b_h(e_t+d_t)
 - \( r \) is a rating value that can range from 0 to 5.
+  - The rating of the restaurant
